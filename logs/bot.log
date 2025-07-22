@@ -1,0 +1,12 @@
+2025-05-08 21:47:48,655 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-08 21:47:48,656 - logging in using static token
+2025-05-08 21:47:50,567 - Shard ID None has connected to Gateway (Session ID: 526bb6bc5f5d07b32cfdcb346380cf41).
+2025-05-08 21:47:52,592 - Added job "enviar_resumo_diario" to job store "default"
+2025-05-08 21:47:52,592 - Scheduler started
+2025-05-08 21:49:29,604 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-08 21:49:29,605 - logging in using static token
+2025-05-08 21:49:32,554 - Shard ID None has connected to Gateway (Session ID: 414228327ce59b0b093383656ff17eaa).
+2025-05-08 21:49:34,570 - Added job "enviar_resumo_diario" to job store "default"
+2025-05-08 21:49:34,571 - Scheduler started
+2025-05-08 21:49:57,967 - Usuário: sthevan (ID: 1071225986772897792) | Canal: teste-bot | Comando: !ia | Extra: qual e a previsao de tempo para amanha?
+2025-05-08 22:25:36,305 - Shard ID None has successfully RESUMED session 414228327ce59b0b093383656ff17eaa.
