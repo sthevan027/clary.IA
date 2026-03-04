@@ -1,74 +1,81 @@
 # Clary.AI - Bot Discord para Produtividade
 
-Bot Discord para automatizar mensagens, resumos, insights e alertas para times técnicos.
+[![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=fff)](https://www.python.org/)
+[![Discord](https://img.shields.io/badge/Discord-5865F2?style=flat&logo=discord&logoColor=fff)](https://discord.com/)
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-## Funcionalidades
+> Bot Discord para automatizar mensagens, resumos, insights e alertas para times técnicos.
 
-- Comandos de produtividade para equipes técnicas
-- Resumo diário automático às 21h
-- Adição e consulta de resumos, progresso, ideias e constância
-- Lembretes personalizados
-- Sugestão de estudo do dia
-- Logs de atividades do bot
-- Customização de templates e alertas
-- Integração com Notion (salvar resumos)
-- Integração com GitHub (alertas de PR/deploy via webhook)
+---
 
-## Requisitos
+## 📋 Sobre
+
+O **Clary.AI** é um bot de produtividade para equipes de desenvolvimento, com resumos diários automáticos, integração com Notion e GitHub, e comandos para gestão de progresso e ideias.
+
+## 🚀 Como rodar
+
+### Pré-requisitos
 
 - Python 3.10+
-- Conta no Discord Developer Portal
+- Conta no [Discord Developer Portal](https://discord.com/developers/applications)
 - Token do bot Discord
-- (Opcional) Token e Database ID do Notion
-- (Opcional) Flask para webhooks do GitHub
 
-## Instalação
+### Instalação
 
-1. Clone o repositório
-2. Instale as dependências:
 ```bash
+# Clone o repositório
+git clone https://github.com/sthevan027/clary.IA.git
+cd clary.IA
+
+# Instale as dependências
 pip install -r requirements.txt
-pip install notion-client flask
+pip install notion-client flask  # para integrações opcionais
+
+# Configure o .env
+# DISCORD_TOKEN=seu_token_aqui
+# CHANNEL_ID=id_do_canal_aqui
+# NOTION_TOKEN=opcional
+# NOTION_DATABASE_ID=opcional
 ```
 
-3. Configure o arquivo `.env`:
-```
-DISCORD_TOKEN=seu_token_aqui
-CHANNEL_ID=id_do_canal_aqui
-NOTION_TOKEN=seu_token_notion
-NOTION_DATABASE_ID=seu_database_id_notion
-```
-
-## Executando o Bot
+### Executar
 
 ```bash
 python src/bot.py
 ```
 
-## Comandos Disponíveis
+## 🛠️ Tecnologias
 
-- `!ping` - Testa se o bot está online
-- `!addresumo <mensagem>` - Adiciona uma informação ao resumo do dia
-- `!resumo [AAAA-MM-DD]` - Mostra o resumo do dia (ou de uma data)
-- `!progresso` - Mostra suas entregas do dia
-- `!ideia <mensagem>` - Salva uma ideia técnica
-- `!estudo` - Sugere tema de estudo do dia
-- `!constancia` - Mostra sua constância semanal
-- `!resumo_semana` - Mostra resumo dos últimos 7 dias
-- `!resumo_mes` - Mostra resumo dos últimos 30 dias
-- `!settemplate <template>` - Define o template do resumo diário
-- `!exportar` - Exporta todos os resumos do mês em um arquivo
-- `!lembrete HH:MM mensagem` - Agenda um lembrete personalizado
+| Biblioteca | Uso |
+|------------|-----|
+| discord.py | API do Discord |
+| python-dotenv | Variáveis de ambiente |
+| apscheduler | Tarefas agendadas |
+| notion-client | Integração Notion (opcional) |
+| Flask | Webhooks GitHub (opcional) |
 
-## Integração com Notion
-- Os resumos podem ser salvos automaticamente em uma database do Notion.
-- Configure `NOTION_TOKEN` e `NOTION_DATABASE_ID` no `.env`.
+## 📱 Comandos disponíveis
 
-## Integração com GitHub
-- Receba alertas de PRs e deploys via webhook.
-- Configure o webhook do GitHub para `http://<seu-servidor>:5000/github-webhook`.
-- Personalize as mensagens de alerta em `config/alerts.json`.
+| Comando | Descrição |
+|---------|-----------|
+| `!ping` | Testa se o bot está online |
+| `!addresumo <msg>` | Adiciona ao resumo do dia |
+| `!resumo [data]` | Mostra resumo do dia ou data |
+| `!progresso` | Mostra entregas do dia |
+| `!ideia <msg>` | Salva ideia técnica |
+| `!estudo` | Sugere tema de estudo |
+| `!constancia` | Mostra constância semanal |
+| `!resumo_semana` | Resumo dos últimos 7 dias |
+| `!resumo_mes` | Resumo dos últimos 30 dias |
+| `!settemplate` | Define template do resumo |
+| `!exportar` | Exporta resumos do mês |
+| `!lembrete HH:MM msg` | Agenda lembrete |
+
+## 🔗 Integrações
+
+- **Notion**: Salva resumos em database — configure `NOTION_TOKEN` e `NOTION_DATABASE_ID`
+- **GitHub**: Alertas de PR/deploy via webhook em `http://servidor:5000/github-webhook`
 
 ---
 
-Para dúvidas ou sugestões, abra uma issue ou entre em contato!
+**Desenvolvido por [Sthevan Santos](https://github.com/sthevan027)**
