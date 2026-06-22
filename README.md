@@ -1,8 +1,8 @@
 # Clary.AI - Bot Discord para Produtividade
 
-[![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=fff)](https://www.python.org/)
-[![Discord](https://img.shields.io/badge/Discord-5865F2?style=flat&logo=discord&logoColor=fff)](https://discord.com/)
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+![Status](https://img.shields.io/badge/status-em%20produ%C3%A7%C3%A3o-success)
+
+![Python](https://img.shields.io/badge/Python-3.10-3776AB?logo=python&logoColor=white) ![discord.py](https://img.shields.io/badge/discord.py-2.3-5865F2?logo=discord&logoColor=white) ![APScheduler](https://img.shields.io/badge/APScheduler-3.10-3776AB?logo=python&logoColor=white) ![License](https://img.shields.io/badge/License-MIT-yellow)
 
 > Bot Discord para automatizar mensagens, resumos, insights e alertas para times técnicos.
 
